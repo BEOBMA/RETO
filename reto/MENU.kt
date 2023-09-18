@@ -18,6 +18,7 @@ import java.util.*
 
 class MENU : Listener {
 
+// 양 손을 교체할 때 호출
     @EventHandler
     fun onSwapHandItems(event : PlayerSwapHandItemsEvent) {
         val player = event.player
@@ -32,6 +33,7 @@ class MENU : Listener {
         }
     }
 
+// 특정 아이템 클릭시 호출
     @EventHandler
     fun onEnhanceButtonClick(event: InventoryClickEvent) {
         val clickedItem = event.currentItem
